@@ -15,7 +15,7 @@ class SecureTemplateParser
     {
         // Define allowed Twig features
         $policy = new SecurityPolicy(
-            ['if', 'for'],               // Allowed tags
+            ['if'],                      // Allowed tags
             ['escape', 'length'],        // Allowed filters
             ['length'],                  // Allowed methods
             [],                          // Allowed properties

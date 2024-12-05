@@ -37,4 +37,15 @@ class SecureTemplateParserTest extends TestCase
 
         $this->assertEquals("Your input: &lt;script&gt;alert(&quot;XSS&quot;)&lt;/script&gt;", $result);
     }
+
+    public function testUnsupportedTags()
+    {
+        $parser = new SecureTemplateParser();
+        $template = "{% set foo = 'bar' %}";
+        $data = [];
+
+        $this->expectException(\Twig\Sandbox\SecurityError::class);
+        $parser->render($template, $data);
+    }
+
 }
