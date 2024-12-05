@@ -7,7 +7,7 @@ use Twig\Loader\ArrayLoader;
 use Twig\Extension\SandboxExtension;
 use Twig\Sandbox\SecurityPolicy;
 
-class SecureTemplateParser
+class HTMLTemplateParser
 {
     protected Environment $twig;
 

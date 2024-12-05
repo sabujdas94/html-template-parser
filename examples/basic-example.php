@@ -2,10 +2,10 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use SecureTemplateParser\SecureTemplateParser;
+use SecureTemplateParser\HTMLTemplateParser;
 
 // Create a new instance of the parser
-$parser = new SecureTemplateParser();
+$parser = new HTMLTemplateParser();
 
 // Define a user-provided template
 $template = <<<EOT
@@ -31,5 +31,5 @@ try {
     $result = $parser->render($template, $data);
     echo $result;
 } catch (\Exception $e) {
-    echo "Error rendering template: " . $e->getMessage();
+    throw $e;
 }

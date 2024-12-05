@@ -2,10 +2,10 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use SecureTemplateParser\SecureTemplateParser;
+use SecureTemplateParser\HTMLTemplateParser;
 
 // Create a new instance of the parser
-$parser = new SecureTemplateParser();
+$parser = new HTMLTemplateParser();
 
 // Define a template with a mix of supported and unsupported features
 $template = <<<EOT

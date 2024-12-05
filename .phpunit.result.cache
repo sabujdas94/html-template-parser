@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"SecureTemplateParserTest::testRenderBasicTemplate":0.053,"SecureTemplateParserTest::testRenderWithConditionalLogic":0.004,"SecureTemplateParserTest::testEscapeHTML":0.001,"SecureTemplateParserTest::testUnsupportedTags":0.005}}

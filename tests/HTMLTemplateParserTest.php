@@ -1,13 +1,13 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use SecureTemplateParser\SecureTemplateParser;
+use SecureTemplateParser\HTMLTemplateParser;
 
 class SecureTemplateParserTest extends TestCase
 {
     public function testRenderBasicTemplate()
     {
-        $parser = new SecureTemplateParser();
+        $parser = new HTMLTemplateParser();
         $template = "Hello, {{ user.name }}!";
         $data = ['user' => ['name' => 'John']];
 
@@ -18,7 +18,7 @@ class SecureTemplateParserTest extends TestCase
 
     public function testRenderWithConditionalLogic()
     {
-        $parser = new SecureTemplateParser();
+        $parser = new HTMLTemplateParser();
         $template = "{% if user.age > 18 %}Welcome, adult!{% else %}Welcome, young one!{% endif %}";
         $data = ['user' => ['age' => 20]];
 
@@ -29,7 +29,7 @@ class SecureTemplateParserTest extends TestCase
 
     public function testEscapeHTML()
     {
-        $parser = new SecureTemplateParser();
+        $parser = new HTMLTemplateParser();
         $template = "Your input: {{ user.input }}";
         $data = ['user' => ['input' => '<script>alert("XSS")</script>']];
 
@@ -40,7 +40,7 @@ class SecureTemplateParserTest extends TestCase
 
     public function testUnsupportedTags()
     {
-        $parser = new SecureTemplateParser();
+        $parser = new HTMLTemplateParser();
         $template = "{% set foo = 'bar' %}";
         $data = [];
 
