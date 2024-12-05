@@ -29,3 +29,7 @@ $data = [
 ];
 
 echo $parser->render($template, $data);
+
+## License
+
+This package is open-source software licensed under the [MIT License](LICENSE).

@@ -2,6 +2,13 @@
     "name": "sabujdas94/html-template-parser",
     "description": "A secure Twig-based HTML template parser for user-provided templates input.",
     "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sabuj Das",
+            "email": "sabujdas94@gmail.com"
+        }
+    ],
     "require": {
         "php": ">=7.4",
         "twig/twig": "^3.0"
