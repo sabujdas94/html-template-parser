@@ -1,1 +1,5 @@
+# Ignore vendor directory
 /vendor/
+
+# Ignore composer lock file (optional, often included in version control)
+/composer.lock
