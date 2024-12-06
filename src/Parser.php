@@ -1,13 +1,13 @@
 <?php
 
-namespace SecureTemplateParser;
+namespace HTMLTemplateParser;
 
 use Twig\Environment;
 use Twig\Loader\ArrayLoader;
 use Twig\Extension\SandboxExtension;
 use Twig\Sandbox\SecurityPolicy;
 
-class HTMLTemplateParser
+class Parser
 {
     protected Environment $twig;
 

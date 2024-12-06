@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SecureTemplateParser\\": "src/"
+            "HTMLTemplateParser\\": "src/"
         }
     },
     "require-dev": {
