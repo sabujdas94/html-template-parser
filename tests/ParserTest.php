@@ -3,7 +3,7 @@
 use PHPUnit\Framework\TestCase;
 use HTMLTemplateParser\Parser;
 
-class SecureTemplateParserTest extends TestCase
+class ParserTest extends TestCase
 {
     public function testRenderBasicTemplate()
     {
